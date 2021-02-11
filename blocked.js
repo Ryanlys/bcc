@@ -1,6 +1,6 @@
 const request = require("request");
-const accountSid = 'AC09503f0b240ab34fc31531bc862b0478';
-const authToken = 'b7570ab2a161b307cbe49d3d526a4f35';
+const accountSid = '';
+const authToken = '';
 const client = require('twilio')(accountSid, authToken);
 
 var interval = 5*1000;
@@ -34,8 +34,8 @@ function job()
 				client.messages
 				  .create({
 				     body: 'not blocked',
-				     from: '+13343730436',
-				     to: '+17806051692'
+				     from: '+',
+				     to: '+'
 				   })
 			}
 		});
